@@ -1,0 +1,55 @@
+input,
+select,
+textarea {
+  background: var(--white-color);
+  opacity: 1
+}
+
+textarea {
+  resize: none
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px 22px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 26px;
+  color: #6f6f6f
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: #6f6f6f solid 2px
+}
+
+::placeholder {
+  color: var(--second-color);
+  font-family: var(--text-font);
+  font-size: 16px;
+  text-align: left;
+  letter-spacing: 0;
+  opacity: 1
+}
+
+input:focus {
+  transition: .35s
+}
+
+input:focus::-webkit-input-placeholder {
+  transition: opacity .45s;
+  opacity: 0
+}
+
+input:focus::-moz-placeholder {
+  transition: opacity .45s;
+  opacity: 0
+}
+
+input:focus:-ms-input-placeholder {
+  transition: opacity .45s;
+  opacity: 0
+}

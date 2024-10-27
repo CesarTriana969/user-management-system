@@ -1,0 +1,320 @@
+.second__title-login,
+.title__login {
+  font-family: var(--text-title-bold);
+  color: #03332d;
+  text-transform: uppercase;
+  letter-spacing: 0
+}
+
+.main__container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  overflow-x: hidden
+}
+
+.login__content {
+  min-height: auto;
+  margin-top: 111px;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.text__img-left--login {
+  position: absolute;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px
+}
+
+.text__img-left--login h3 {
+  text-align: center;
+  font-size: 34px;
+  letter-spacing: 0;
+  color: #fafafa
+}
+
+.text__img-left--login p {
+  text-align: center;
+  font-size: 16px;
+  font-family: var(--text-title);
+  letter-spacing: 0;
+  color: #fafafa;
+  opacity: 85%
+}
+
+.title__login {
+  text-align: left;
+  font-size: 45px;
+  width: 300px
+}
+
+.second__title-login {
+  text-align: left;
+  font-size: 30px
+}
+
+.input__checkbox {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 5px;
+  padding-top: 5px
+}
+
+.input__checkbox input {
+  width: 18px;
+  height: 18px
+}
+
+.input__checkbox p {
+  text-align: left;
+  font-family: var(--font-text);
+  font-size: 16px;
+  color: #2e2e22;
+  margin: 0
+}
+
+.forgot__password-question {
+  text-align: center;
+  font-family: var(--font-text);
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  letter-spacing: 0;
+  color: #45aa33
+}
+
+.bg__points-login {
+  position: absolute;
+  left: 20px;
+  bottom: 5%;
+  transform: translateY(-50%);
+  width: 66px;
+  height: 183px
+}
+
+.bg__points-login img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain
+}
+
+.bg__wave-login {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 300px;
+  background-color: #f5f5f5;
+  z-index: -1
+}
+
+.wave__login {
+  position: absolute;
+  width: 100%;
+  height: 270px !important;
+  bottom: -270px
+}
+
+.ov-btn-grow-ellipse {
+  padding: 12px 0
+}
+
+.draggable__circle {
+  position: fixed;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: grab;
+  left: 0;
+  top: 50%;
+  z-index: 50;
+  transform: translate(-50%, -50%)
+}
+
+.draggable__circle .social__network-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-180deg)
+}
+
+.social__network-items .facebook__icon,
+.social__network-items .instagram__icon,
+.social__network-items .phone__icon,
+.social__network-items .social__network-btn {
+  height: 60px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .2)
+}
+
+.social__network-items .social__network-btn {
+  font-size: 35px;
+  z-index: 100;
+  cursor: pointer;
+  transform: rotate(180deg);
+  transition: .6s;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 5px 20px 5px 5px;
+  background-color: var(--first-color);
+  border: 1px solid var(--white-color);
+  opacity: 1;
+  width: 100px;
+  height: 100px
+}
+
+.social__network-items.open .social__network-btn {
+  transform: rotate(0)
+}
+
+.facebook__icon,
+.instagram__icon,
+.phone__icon {
+  position: absolute;
+  transition: .6s;
+  opacity: 0
+}
+
+.draggable__circle.open .social__network-items .facebook__icon,
+.draggable__circle.open .social__network-items .instagram__icon,
+.draggable__circle.open .social__network-items .phone__icon {
+  opacity: 1;
+  transform: rotate(calc(var(--i) *(360deg/8))) translateY(120px)
+}
+
+.social__network-btn>svg {
+  transition: transform .3s
+}
+
+.draggable__circle.open .social__network-items .social__network-btn>svg {
+  transform: rotate(-180deg)
+}
+
+.facebook__icon svg,
+.instagram__icon svg,
+.phone__icon svg {
+  font-size: 24px;
+  color: #0e2431;
+  opacity: .8;
+  transition: .2s
+}
+
+.facebook__icon svg {
+  transform: rotate(135deg)
+}
+
+.phone__icon svg {
+  transform: rotate(50deg)
+}
+
+.facebook__icon:hover,
+.instagram__icon:hover,
+.phone__icon:hover {
+  opacity: 1
+}
+
+.social__network-items>a {
+  border-radius: 50%;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.facebook__icon {
+  background: #3b5998
+}
+
+.facebook__icon:hover {
+  box-shadow: 5px 0 20px #3b5998
+}
+
+.instagram__icon {
+  background: radial-gradient(circle at 100% 107%, #fdf497 0, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%) #d6249f
+}
+
+.instagram__icon:hover {
+  box-shadow: 5px 0 20px #fd5949
+}
+
+.phone__icon {
+  background: #4dc247
+}
+
+.phone__icon:hover {
+  box-shadow: 5px 0 20px #55acee
+}
+
+@media(width <=1150px) {
+
+  .bg__points-login,
+  .draggable__circle {
+    display: none
+  }
+
+  .login__content {
+    margin-top: 0;
+    height: 950px;
+    max-width: 90%
+  }
+
+  .title__login {
+    font-size: 30px
+  }
+
+  .second__title-login {
+    font-size: 25px
+  }
+
+  .ov-btn-grow-ellipse {
+    width: 90%;
+    font-size: 15px
+  }
+
+  .login__form {
+    overflow-y: auto;
+    overflow-x: hidden
+  }
+
+  .login__form::-webkit-scrollbar {
+    width: 8px
+  }
+
+  .login__form::-webkit-scrollbar-thumb {
+    background-color: #f5f5f5;
+    border-radius: 6px
+  }
+}
+
+@media(width <=375px) and (height <=670px) {
+  .login__content {
+    height: 800px
+  }
+
+  .ov-btn-grow-ellipse {
+    height: 35px
+  }
+
+  .title__login {
+    font-size: 25px
+  }
+
+  .second__title-login {
+    font-size: 20px
+  }
+}
